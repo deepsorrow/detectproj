@@ -56,7 +56,6 @@ auto Detector::process_frame(cv::Mat &frame) -> void{
             int _contourArea = static_cast<int>(contourArea(cnts[i][j])); // обрисовать область,
             // в котором было движение
             cntsareas[i].push_back(_contourArea);
-            //монетница (движение около монетницы редки, поэтому там таймер ожидания больше)
         }
 
     }
